@@ -195,30 +195,33 @@ body {
 }
 
 /* Hide default checkbox */
+/* Hide default checkbox */
 input[type="checkbox"] {
     position: absolute;
     opacity: 0;
 }
 
-/* Create custom checkbox */
-#cb {
+/* Custom checkbox style */
+.cb-label {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-#cb::before {
+.cb-label::before {
     content: "";
     display: inline-block;
-    width: 40px;  /* Adjust width */
-    height: 40px; /* Adjust height */
-    /* border: 2px solid #333; */
-    /* border-radius: 4px; */
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1a7a69;
+    border-radius: 4px;
     margin: 10px;
     background-color: #f6e5c3;
+    transition: background-color 0.3s ease;
 }
 
-/* Style the checked state */
-input[type="checkbox"]:checked + #cb::before {
+/* Checked state */
+input[type="checkbox"]:checked + .cb-label::before {
     background-color: #f6e5c3;
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="rgb(26, 122, 105)" d="M6.3 12.1L2.2 8 3.6 6.6l2.7 2.7 6.1-6.1 1.4 1.4z"/%3E%3C/svg%3E');
     background-size: 30px 30px;
