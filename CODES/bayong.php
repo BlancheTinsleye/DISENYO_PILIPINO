@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="STYLES/bayong_style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <?php
+        include 'database.php'
+    ?>
 </head>
 <body>
     <section class="cont">
@@ -39,36 +43,6 @@
             </div>
 
             <?php
-                // Sample product array for illustration
-                $prdcts = [
-                    [
-                        'id' => 1,
-                        'src' => 'https://res.cloudinary.com/damtc4g0q/image/upload/v1726758220/barong1_y9rx6j.jpg',
-                        'prdct_nm' => 'BARONG TAGALOG',
-                        'prc' => 400,
-                        'rate' => 4.5,
-                        'liked' => true,
-                        'in_cart' => true
-                    ],
-                    [
-                        'id' => 2,
-                        'src' => 'https://res.cloudinary.com/damtc4g0q/image/upload/v1726759243/barong2_uq26uc.jpg',
-                        'prdct_nm' => 'BARONG',
-                        'prc' => 350,
-                        'rate' => 4.4,
-                        'liked' => false,
-                        'in_cart' => false
-                    ],
-                    [
-                        'id' => 3,
-                        'src' => 'https://res.cloudinary.com/damtc4g0q/image/upload/v1726759507/daster1_wkhdye.jpg',
-                        'prdct_nm' => 'Daster pang nanay',
-                        'prc' => 120,
-                        'rate' => 4.7,
-                        'liked' => true,
-                        'in_cart' => true
-                    ]
-                ];
 
                 // Display products with unique checkbox IDs
                 foreach ($prdcts as $prdct) {
@@ -89,6 +63,9 @@
                         </div>';
                 }
             ?>
+        <div class="filler_cont">
+            &nbsp;
+        </div>
     </section>
     
     <div class="lower_cont">

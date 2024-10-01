@@ -317,3 +317,9 @@ input[type="checkbox"]:checked + .cb-label::before {
 .checkout_bttn:hover {
     background-color: #0f6353;
 }
+
+.filler_cont {
+    width: auto;
+    height: 100px;
+    margin: 2vb;
+}
